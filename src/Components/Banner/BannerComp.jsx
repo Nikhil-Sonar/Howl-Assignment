@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './Banner.css';
+// import useRevealEffect from './useRevealEffect'; 
+import UseRevealEffectComp from '../UseRevealEffect/UseRevealEffectComp';
 import peopleGrp from 'D:/nikhil sonar/NIKHIL SONAR BACKUP/Nodejsprac/HowlAssignment/howl/src/assets/people-Group.jpg';
 import deskImg from 'D:/nikhil sonar/NIKHIL SONAR BACKUP/Nodejsprac/HowlAssignment/howl/src/assets/study-desk-img.jpeg';
 
 const BannerComp = () => {
     const [isVisible, setIsVisible] = useState(false);
+    const ref = UseRevealEffectComp('fadeIn');
 
     useEffect(() => {
         // Simulate loading delay
@@ -16,7 +19,7 @@ const BannerComp = () => {
     }, []);
 
     return (
-        <section className={`section-2 ${isVisible ? 'visible' : ''}`}>
+        <section ref={ref} className={`section-2 ${isVisible ? 'visible' : ''}`}>
             <div className="banner-parent">
                 <div className="banner-parent-card">
                     <div className="banner-parent-card-text">

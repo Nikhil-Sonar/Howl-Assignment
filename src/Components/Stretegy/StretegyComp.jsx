@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import './Stretegy.css'
+import UseRevealEffectComp from '../UseRevealEffect/UseRevealEffectComp';
+
 
 const StretegyComp = () => {
 
     const [selectedVal, setSelectedVal] = useState("")
+    const ref = UseRevealEffectComp();
 
     return (
-        <section className='section-3'>
+        <section ref={ref} className='section-3'>
             <div className='stretagy-parent'>
                     <p className='select-txt'>{selectedVal}</p>
                 <div className="stretagy-parent-card">

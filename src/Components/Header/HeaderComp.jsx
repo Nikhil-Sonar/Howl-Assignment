@@ -1,12 +1,13 @@
 import {useState} from 'react';
 import './Header.css';
+import UseRevealEffectComp from '../UseRevealEffect/UseRevealEffectComp';
 import webLogo from 'D:/nikhil sonar/NIKHIL SONAR BACKUP/Nodejsprac/HowlAssignment/howl/src/assets/wolf-logo.png';
 import hamburger from 'D:/nikhil sonar/NIKHIL SONAR BACKUP/Nodejsprac/HowlAssignment/howl/src/assets/menu-icon.png';
 
  const HeaderComp = () => {
     const [countMenu, SetCountMenu] = useState();
     const [mobileview , setMobileview] = useState();
-
+    const ref = UseRevealEffectComp();
 
 
     const openNav = () => {
@@ -22,7 +23,7 @@ import hamburger from 'D:/nikhil sonar/NIKHIL SONAR BACKUP/Nodejsprac/HowlAssign
       }
 
   return (
-    <section className='header'>
+    <section ref={ref} className='header'>
         <div className='header-card'>
             <div className="header-img">
                 <img src={webLogo} alt="website Logo" />
@@ -40,7 +41,6 @@ import hamburger from 'D:/nikhil sonar/NIKHIL SONAR BACKUP/Nodejsprac/HowlAssign
                 <a href="#">Projects</a>
             </div>
         </div>
-
     </section>
   )
 }

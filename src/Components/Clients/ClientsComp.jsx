@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Clients.css';
+import UseRevealEffectComp from '../UseRevealEffect/UseRevealEffectComp';
 import Slider from 'react-slick';
 import deskImg from 'D:/nikhil sonar/NIKHIL SONAR BACKUP/Nodejsprac/HowlAssignment/howl/src/assets/study-desk-img.jpeg';
 
@@ -10,6 +11,7 @@ import deskImg from 'D:/nikhil sonar/NIKHIL SONAR BACKUP/Nodejsprac/HowlAssignme
 const ClientsComp = () => {
 
   const [countLength, setCountLength] = useState(16);
+  const ref = UseRevealEffectComp('fadeIn');
 
   const sliderSettings = {
     infinite: false,
@@ -70,7 +72,7 @@ const ClientsComp = () => {
   }
 
   return (
-    <section className='section-4'>
+    <section ref={ref} className='section-4'>
       <div className='clients-parent'>
         <div className="clients-txt">Clients we work with</div>
         <div className="clients-parent-card">

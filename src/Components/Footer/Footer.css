@@ -1,0 +1,68 @@
+.section-6 {
+    background-color: rgb(50 48 48);
+    padding: 25px 160px;
+    color: #fff;
+}
+
+.section-6 ul {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 15px;
+    align-items: center;
+}
+
+.insta-icon {
+    width: 30px;
+}
+
+.section-6 ul li {
+    font-size: 12px;
+    padding: 10px 0px;
+
+}
+
+.newsletter-txt img {
+    width: 25px;
+    margin-left: 10px;
+}
+
+.newsletter-txt {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px !important;
+    font-size: 11px;
+    border: 1px solid #c333fcd9;
+}
+
+.right-txt{
+    font-size: 10px;
+}
+
+@media (max-width:767px) {
+    .section-6 {
+        padding: 16px 60px;
+    }
+    .section-6 ul {
+        display: block;
+    }
+
+    .section-6 ul li {
+        width: 100%;
+        text-align: center;
+        font-size: 11px;
+    }
+
+    .newsletter-txt {
+        display: flex;
+        align-items: center;
+        padding: 5px 44px !important;
+        font-size: 11px;
+        border: 1px solid #c333fcd9;
+    }
+
+    .right-txt{
+        line-height: 18px;
+    }
+
+}
+

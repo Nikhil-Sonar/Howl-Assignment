@@ -1,0 +1,74 @@
+.Keep-track-card {
+    background-color: #9331b9ed;
+    padding: 60px 100px;
+}
+
+.Keep-track-txt {
+    color: #444444d9;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 40px 0px;
+}
+
+.Keep-track-img {
+    width: 160px;
+    height: 170px;
+    margin: 15px 18px 0px 0px;
+}
+
+.track-talk {
+    color: #9c2dc7d9;
+    border-bottom: 5px solid #e5a2ffd9;
+    cursor: pointer;
+}
+
+.Keep-track-card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Keep-track-card-text {
+    color: #fff;
+    font-size: 50px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.Keep-track-card-text img {
+    width: 50px;
+}
+
+.section-6 ul li{
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .Keep-track-card {
+        display: block;
+    }
+
+    .Keep-track-card-img {
+        display: flex;
+    }
+
+    .Keep-track-card {
+        padding: 50px 20px;
+    }
+
+    .Keep-track-img {
+        min-width: 108px;
+        height: 140px;
+        margin: 10px 12px 0px 0px;
+    }
+
+    .Keep-track-txt {
+        font-size: 20px;
+        padding: 34px 0px;
+    }
+
+    .Keep-track-card-text {
+        font-size: 34px;
+    }
+
+}

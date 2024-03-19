@@ -1,0 +1,474 @@
+.section-3 {
+    padding: 40px 60px;
+    background-color: #f4f4ff;
+    margin-top: 40px;
+}
+
+.stretagy-parent {
+    background-color: #988dbad9;
+    padding: 60px 140px 0px 140px;
+}
+
+.stretagy-parent-card {
+    width: 100%;
+}
+
+.stretagy-parent-card-one {
+    width: 35%;
+    text-align: left;
+    color: #fff;
+    border: 1px solid;
+    border-width: 1px 1px 0px 0px;
+}
+
+.stretagy-parent-card-two {
+    width: 70%;
+    border-color: white;
+    border-style: solid;
+    border-width: 0px 1px 1px 0px;
+}
+
+ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+.stretagy-part ul {
+    font-size: 18px;
+    padding: 0px;
+    color: #f0ecec;
+    letter-spacing: 0.5px;
+}
+
+.stretagy-part ul li {
+    cursor: pointer;
+}
+
+.select-txt {
+    color: #fff;
+    text-align: left;
+    font-size: 23px;
+    font-weight: 500;
+    margin: 0px 0px 10px 1%;
+}
+
+.stretagy-layer {
+    border: 1px solid;
+    border-width: 1px 0px 1px 1px;
+    margin: 108px 0px 0px 70px;
+}
+
+.stretagy-layer ul {
+    padding: 45px 50px;
+    font-size: 12px;
+}
+
+:root {
+    --level-1: #8dccad;
+    --level-2: #f5cc7f;
+    --level-3: #7b9fe0;
+    --level-4: #f27c8d;
+    --black: black
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+ol {
+    list-style: none
+}
+
+.rectangle {
+    position: relative;
+    padding: 20px 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .15)
+}
+
+.level-1 {
+    width: 50%;
+    margin: 0 auto 40px;
+    background: var(--level-1)
+}
+
+.level-2-wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+
+.level-2-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 25%;
+    width: 50%;
+    height: 2px;
+    background: var(--black)
+}
+
+.level-2-wrapper::after {
+    display: none;
+    content: "";
+    position: absolute;
+    left: -20px;
+    bottom: -20px;
+    width: calc(100% + 20px);
+    height: 2px;
+    background: var(--black)
+}
+
+.level-2-wrapper li {
+    position: relative
+}
+
+.level-2-wrapper>li::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 20px;
+    background: var(--black)
+}
+
+.level-2 {
+    width: 70%;
+    margin: 0 auto 40px;
+    background: var(--level-2)
+}
+
+.level-2::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 20px;
+    background: var(--black)
+}
+
+.level-2::after {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    width: 20px;
+    height: 2px;
+    background: var(--black)
+}
+
+.level-3-wrapper {
+    position: relative;
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    width: 100%;
+    margin: 0 auto 0 40px;
+    color: #fff;
+    font-size: 11px;
+}
+
+.color-blk {
+    color: black;
+    font-size: 12px;
+}
+
+.back-color-heading {
+    background-color: #bcbaff !important;
+    border: none !important;
+}
+
+.level-3 {
+    margin-bottom: 60px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.level-4-wrapper {
+    position: relative;
+}
+
+.level-4-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    width: 1px;
+    height: calc(100% + 20px);
+    background: repeating-linear-gradient(0deg, white 0 10px, #0000 0 12px) bottom;
+    border: 1px dashed;
+}
+
+.level-4-wrapper li+li {
+    margin-top: 60px
+}
+
+.level-5-wrapper li+li {
+    margin-top: 42px;
+}
+
+.level-4 {
+    font-weight: 400;
+    background: #948f97;
+    border-radius: 30px;
+    border: 3px dashed white;
+}
+
+.consumer-list li {
+    margin-top: 8px !important;
+    margin: 0px 10px;
+}
+
+.level-4::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    width: 20px;
+    /* height: 2px; */
+    background: var(--black)
+}
+
+.level-4m::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    width: 23px;
+    height: 2px;
+    background: repeating-linear-gradient(0deg, white 0 10px, #0000 0 12px) bottom;
+    border: 0px dashed white;
+}
+
+.level-5m::before {
+    width: 0px;
+}
+
+.brand-cir-card {
+    display: flex;
+    border: 3px dashed;
+    border-radius: 42px;
+}
+
+.stretagy-parent-card {
+    display: flex;
+}
+
+.brand-cir-card .level-4m {
+    padding: 32px 17px 32px 17px;
+    border-radius: 38px;
+}
+
+.level-d {
+    margin-bottom: 48px;
+}
+
+.text-one {
+    margin-right: 10px;
+}
+
+.level-5-wrapper {
+    height: 60px !important;
+}
+
+.stretagy-layer ul li {
+    padding: 8px 0px 8px 0px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.layer-1 {
+    background-color: #fff;
+    color: rgb(61, 60, 60);
+}
+
+.layer-2 {
+    background-color: #d988f7;
+}
+
+.layer-3 {
+    border: 3px dashed;
+}
+
+.layer-4 {
+    background-color: #ac8df7;
+}
+
+.layer-5 {
+    background-color: #dd9af8;
+}
+
+.mar-top {
+    margin-top: 12px;
+}
+
+.level-5m-list {
+    background-color: #8c89e3 !important;
+}
+
+.level-5m-list-large {
+    background-color: #9d9bd7 !important;
+}
+
+.stretagy-parent-btn {
+    width: 100%;
+    text-align: end;
+}
+
+.stretagy-button {
+    padding: 18px 25px;
+    background-color: #988dbad9;
+    border: 2px solid white;
+    color: white;
+}
+
+@media screen and (max-width:700px) {
+    .rectangle {
+        padding: 12px 0px
+    }
+
+    .level-1,
+    .level-2 {
+        width: 100%
+    }
+
+    .level-1 {
+        margin-bottom: 20px
+    }
+
+    .level-1::before,
+    .level-2-wrapper>li::before {
+        display: none
+    }
+
+    .level-2-wrapper,
+    .level-2-wrapper::after,
+    .level-2::after {
+        display: block
+    }
+
+    .level-2-wrapper {
+        width: 90%;
+        margin-left: 10%
+    }
+
+    .level-2-wrapper::before {
+        left: -20px;
+        width: 2px;
+        height: calc(100% + 40px)
+    }
+
+    .level-2-wrapper>li:not(:first-child) {
+        margin-top: 50px
+    }
+
+    .stretagy-parent-card {
+        display: block;
+        margin-bottom: 26px;
+    }
+
+    .stretagy-parent {
+        padding: 50px 15px 0px 15px;
+    }
+
+    .stretagy-parent-card-one {
+        width: 100%;
+    }
+
+    .stretagy-layer ul {
+        padding: 16px;
+    }
+
+    .stretagy-layer ul li {
+        font-size: 11px;
+    }
+
+    .stretagy-part ul {
+        font-size: 14px;
+    }
+
+    .stretagy-layer {
+        margin: 20px 0px 0px 0px;
+    }
+
+    .section-3 {
+        margin-top: 60px;
+        padding: 24px 24px;
+    }
+
+    .level-3-wrapper {
+        margin: 0px;
+    }
+
+    .stretagy-parent-card-two {
+        margin-top: 50px;
+        border: none;
+        width: 100%;
+    }
+
+    .level-3 {
+        margin-bottom: 24px;
+    }
+
+    .level-3-wrapper {
+        grid-column-gap: 8px;
+    }
+
+    .color-blk {
+        font-size: 10px;
+    }
+
+    .level-4-wrapper::before {
+        top: -26px;
+    }
+
+    .brand-cir-card .level-4m {
+        padding: 12px 6px 12px 6px;
+        font-size: 9px;
+    }
+
+    .level-4m::before {
+        width: 9px;
+    }
+
+    .level-5-wrapper li+li {
+        margin-top: 48px;
+    }
+
+    .consumer-list li {
+        margin-top: 3px !important;
+        margin: 0px 0px;
+    }
+
+    .level-4 {
+        border-radius: 14px;
+    }
+
+    ul li {
+        padding: 8px;
+    }
+
+    .level-4-wrapper li+li {
+        margin-top: 35px;
+    }
+
+    .level-5-wrapper li+li {
+        margin-top: 23px;
+    }
+
+    .select-txt {
+        font-size: 20px;
+    }
+
+    .level-5-wrapper {
+        height: 7px !important;
+    }
+}

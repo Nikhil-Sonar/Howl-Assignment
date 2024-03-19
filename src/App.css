@@ -1,10 +1,15 @@
 .App {
   text-align: center;
+  font-family: sans-serif;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+body{
+  min-width: 1519px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -34,5 +39,11 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width:767px) {
+  body{
+    min-width: auto;
   }
 }
